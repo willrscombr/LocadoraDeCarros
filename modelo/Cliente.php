@@ -59,33 +59,7 @@ class Cliente {
 
 
    function inserir(){
-       //echo $this->nome;
-       //$conn =  ConnectionBD::getAvailableDrivers();
-       //print_r($conn);
-       $sql = "select * from Cliente";
-       $result = $conn->exec(sql);
-       print_r($result->fetchAll());
-       
-       if($conn){
-          // $conn->prepare("INSERT INTO Cliente(codcliente, nome, cpf, email, fone, endereco) VALUES".
-            //                " ($this->codcliente,$this->nome,$this->cpf,$this->email,$this->fone,$this->endereco)");
-            
-           $conn->execute();
-           echo "Deu certo";
-           
-       }
-      /* try{
-           $conn = ConnectionBD::getAvailableDrivers();
-           $stmt = $conn->exec("INSERT INTO Cliente(codcliente, nome, cpf, email, fone, endereco) VALUES".
-                            " ($this.codcliente,$this->nome,$this->cpf,$this->email,$this->fone,$this->endereco)");
-           echo stmt;
-           $retorno = 'Try executado';
-       }  catch (Exception $exc){
-           $retorno =  'catch executado';
-           die();
-       }
-       return $retorno;*/
-       
+        echo "Itens inseridos";
    }
    
    
